@@ -18,7 +18,7 @@ function setQuote(){
 const DEFAULT_PREFS = {theme: "system", user: null, font: "inter", size: "m", accent: "blue", sound: true, haptics: true, remind: false, nview: "list"};
 let prefs = Object.assign({}, DEFAULT_PREFS);
 
-const API_URL = "http://localhost:3000/api/rituals";
+const API_URL = "https://ritual-s-tracker.onrender.com/api/rituals";
 function rd(k){ try { return JSON.parse(localStorage.getItem(k)); } catch(e){ return null; } }
 function wr(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
 function savePrefs(){ wr(PREF, prefs); }
